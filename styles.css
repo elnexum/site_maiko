@@ -574,6 +574,149 @@ img {
   background: linear-gradient(180deg, rgba(255, 251, 247, 0.98), rgba(241, 232, 221, 0.95));
 }
 
+.quote-builder {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top right, rgba(183, 132, 86, 0.15), transparent 28%),
+    rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(32, 22, 18, 0.08);
+}
+
+.quote-copy {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+  padding: 0.4rem;
+}
+
+.quote-copy h3 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.08;
+}
+
+.quote-copy p,
+.form-note {
+  color: var(--ink-soft);
+  line-height: 1.68;
+}
+
+.quote-highlights {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0;
+  margin: 0.2rem 0 0;
+  list-style: none;
+}
+
+.quote-highlights li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--ink-soft);
+}
+
+.quote-highlights li::before {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.quote-form {
+  display: grid;
+  gap: 0.95rem;
+  padding: 1.1rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(32, 22, 18, 0.1);
+  box-shadow: 0 14px 30px rgba(44, 28, 18, 0.06);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field span {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--wood-deep);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(32, 22, 18, 0.12);
+  border-radius: 14px;
+  background: #fffdfa;
+  color: var(--ink);
+  padding: 0.92rem 1rem;
+  font: inherit;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(92, 75, 66, 0.8);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: rgba(113, 74, 49, 0.34);
+  box-shadow: 0 0 0 4px rgba(183, 132, 86, 0.12);
+  background: #ffffff;
+}
+
+.field textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.quote-form__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+}
+
+.quote-form__footer .button {
+  border: 0;
+  cursor: pointer;
+}
+
+.form-note {
+  max-width: 26rem;
+  margin: 0;
+  font-size: 0.94rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -663,6 +806,7 @@ img {
   .portfolio-grid,
   .card-grid,
   .segment-grid,
+  .quote-builder,
   .contact-grid,
   .trust-strip {
     grid-template-columns: 1fr 1fr;
@@ -729,6 +873,8 @@ img {
   .segment-grid,
   .portfolio-grid,
   .positioning-layout,
+  .quote-builder,
+  .form-row,
   .contact-grid {
     grid-template-columns: 1fr;
   }

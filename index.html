@@ -59,9 +59,7 @@
             <div class="hero-actions">
               <a
                 class="button button-primary"
-                href="https://wa.me/5527988626658?text=Ola%2C%20vim%20pelo%20site%20da%20Shopping%20Yokohama%20e%20quero%20pedir%20um%20orcamento."
-                target="_blank"
-                rel="noreferrer"
+                href="#orcamento-form"
               >
                 Pedir orcamento
               </a>
@@ -470,6 +468,121 @@
                 <strong>Residencial e comercial</strong>
                 <p>Montagem, desmontagem, paineis, cabeceiras e ajustes sob medida.</p>
               </article>
+            </div>
+
+            <div class="quote-builder">
+              <div class="quote-copy">
+                <p class="mini-label">PEDIDO GUIADO</p>
+                <h3>Explique o que precisa e abra o WhatsApp com a mensagem pronta.</h3>
+                <p>
+                  O cliente preenche os dados principais do servico aqui no site
+                  e o pedido ja vai organizado para o WhatsApp do Maicon.
+                </p>
+                <ul class="quote-highlights">
+                  <li>Mensagem estruturada para acelerar o orcamento</li>
+                  <li>Melhor leitura do servico, ambiente e urgencia</li>
+                  <li>Funciona bem no celular e no desktop</li>
+                </ul>
+              </div>
+
+              <form
+                class="quote-form"
+                id="orcamento-form"
+                data-whatsapp-number="5527988626658"
+              >
+                <div class="form-row">
+                  <label class="field">
+                    <span>Nome</span>
+                    <input
+                      type="text"
+                      name="nome"
+                      placeholder="Ex.: Ana Paula"
+                      autocomplete="name"
+                      required
+                    />
+                  </label>
+
+                  <label class="field">
+                    <span>Telefone</span>
+                    <input
+                      type="tel"
+                      name="telefone"
+                      placeholder="Ex.: (27) 99999-9999"
+                      autocomplete="tel"
+                    />
+                  </label>
+                </div>
+
+                <div class="form-row">
+                  <label class="field">
+                    <span>Servico</span>
+                    <select name="servico" required>
+                      <option value="">Selecione</option>
+                      <option>Montagem de moveis</option>
+                      <option>Desmontagem para mudanca</option>
+                      <option>Remontagem</option>
+                      <option>Painel de TV ou rack</option>
+                      <option>Cabeceira ou ripado</option>
+                      <option>Guarda-roupa ou armario</option>
+                      <option>Outro servico</option>
+                    </select>
+                  </label>
+
+                  <label class="field">
+                    <span>Ambiente</span>
+                    <select name="ambiente" required>
+                      <option value="">Selecione</option>
+                      <option>Quarto</option>
+                      <option>Sala</option>
+                      <option>Closet</option>
+                      <option>Escritorio</option>
+                      <option>Loja</option>
+                      <option>Outro ambiente</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="form-row">
+                  <label class="field">
+                    <span>Bairro ou cidade</span>
+                    <input
+                      type="text"
+                      name="localizacao"
+                      placeholder="Ex.: Jardim Camburi, Vitoria"
+                    />
+                  </label>
+
+                  <label class="field">
+                    <span>Prazo</span>
+                    <select name="prazo">
+                      <option value="">Pode ser combinado</option>
+                      <option>Preciso o quanto antes</option>
+                      <option>Esta semana</option>
+                      <option>Proxima semana</option>
+                      <option>Sem urgencia</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label class="field field--full">
+                  <span>Descreva o que precisa</span>
+                  <textarea
+                    name="detalhes"
+                    placeholder="Ex.: preciso montar um guarda-roupa de 3 portas com espelho e instalar uma cabeceira. Posso enviar fotos."
+                    required
+                  ></textarea>
+                </label>
+
+                <div class="quote-form__footer">
+                  <button class="button button-primary" type="submit">
+                    Enviar pedido no WhatsApp
+                  </button>
+                  <p class="form-note">
+                    Ao clicar, o WhatsApp do Maicon abre com sua mensagem pronta
+                    para envio.
+                  </p>
+                </div>
+              </form>
             </div>
 
             <div class="contact-actions">
