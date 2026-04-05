@@ -57,11 +57,11 @@ if (quoteForm) {
     const detalhes = (formData.get("detalhes") || "").toString().trim();
 
     const parts = [
-      "Ola, Maicon. Vim pelo site da Shopping Yokohama e quero pedir um orcamento.",
+      "Olá, Maicon. Vim pelo site da Shopping Yokohama e quero pedir um orçamento.",
       "",
       `Nome: ${nome}`,
       telefone ? `Telefone: ${telefone}` : "",
-      `Servico: ${servico}`,
+      `Serviço: ${servico}`,
       `Ambiente: ${ambiente}`,
       localizacao ? `Bairro ou cidade: ${localizacao}` : "",
       prazo ? `Prazo: ${prazo}` : "",
