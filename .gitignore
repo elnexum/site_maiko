@@ -28,3 +28,8 @@ Homestead.json
 .env.production
 .phpactor.json
 auth.json
+
+server.out.log
+server.err.log
+Thumbs.db
+.DS_Store
