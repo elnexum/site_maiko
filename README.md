@@ -16,6 +16,10 @@ Landing page estatica da Shopping Yokohama.
 - `script.js`: menu mobile, reveal no scroll e ano automatico no rodape
 - `serve-local.ps1`: servidor local em PowerShell para preview
 
+## Area do Maicon (Painel)
+
+- Acesso em `/painel/login.html` (usuário: `maicon`, senha: `1234`)
+
 ## Canais confirmados
 
 - WhatsApp: `+55 27 98862-6658`
