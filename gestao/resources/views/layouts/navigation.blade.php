@@ -23,6 +23,12 @@
                        style="color: {{ request()->routeIs('services.*') ? '#e0cc70' : '#8899aa' }}; background: {{ request()->routeIs('services.*') ? 'rgba(224,204,112,0.08)' : 'transparent' }};">
                         Serviços
                     </a>
+                    <a href="{{ route('ajuda') }}"
+                       class="px-3 py-2 rounded text-xs font-semibold uppercase tracking-wider transition"
+                       title="Como usar o sistema"
+                       style="color: {{ request()->routeIs('ajuda') ? '#e0cc70' : '#8899aa' }}; background: {{ request()->routeIs('ajuda') ? 'rgba(224,204,112,0.08)' : 'transparent' }};">
+                        ? Ajuda
+                    </a>
                 </div>
             </div>
 
@@ -50,6 +56,7 @@
             <a href="{{ route('dashboard') }}" class="block px-3 py-2 rounded text-xs font-semibold uppercase tracking-wider" style="color:#8899aa;">Painel</a>
             <a href="{{ route('clients.index') }}" class="block px-3 py-2 rounded text-xs font-semibold uppercase tracking-wider" style="color:#8899aa;">Clientes</a>
             <a href="{{ route('services.index') }}" class="block px-3 py-2 rounded text-xs font-semibold uppercase tracking-wider" style="color:#8899aa;">Serviços</a>
+            <a href="{{ route('ajuda') }}" class="block px-3 py-2 rounded text-xs font-semibold uppercase tracking-wider" style="color:#8899aa;">? Ajuda</a>
         </div>
         <div class="px-4 py-3" style="border-top:1px solid rgba(255,255,255,0.05);">
             <p class="text-xs mb-2" style="color:#8899aa;">{{ Auth::user()->name }}</p>
