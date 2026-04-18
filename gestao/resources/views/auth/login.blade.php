@@ -21,16 +21,16 @@
 
         <div class="mb-5">
             <label class="block text-xs font-semibold uppercase tracking-wider mb-2" style="color:#8899aa;">Senha</label>
-            <div class="relative">
+            <div style="position:relative;">
                 <input id="password" type="password" name="password"
                        required autocomplete="current-password"
-                       class="w-full px-4 py-3 pr-12 rounded-lg text-sm outline-none transition"
-                       style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#e2e8f0; caret-color:#e0cc70;"
+                       style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#e2e8f0; caret-color:#e0cc70; width:100%; padding:0.75rem 3rem 0.75rem 1rem; border-radius:8px; font-size:0.875rem; outline:none;"
                        onfocus="this.style.borderColor='#e0cc70'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-                <button type="button" onclick="toggleSenha()" class="absolute right-3 top-1/2 -translate-y-1/2 opacity-50 hover:opacity-100 transition">
-                    <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#e0cc70">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                <button type="button" onclick="toggleSenha()"
+                        style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; padding:4px; opacity:0.7;">
+                    <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#e0cc70" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                 </button>
             </div>
